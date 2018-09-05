@@ -27,14 +27,27 @@ body{font-family: 'Noto Sans', sans-serif;}
 .header_menu li>a{display:block;line-height:66px;font-size:16px;font-weight:bold;height:61px;text-align:center;}
 .header_menu li>a:hover{background:powderblue;}
 
+
 #content_wrap{width:100%;height:1200px;background:url(../images/01.jpg);background-size:cover;}
 #content_wrap .content{width:980px;margin:0 auto;}
 .content .select{float:left;margin-top:55px;}
 .content .select a{display:block;text-align:center;line-height:75px;width:160px;height:75px;background:#0099cb;font-weight:bold;}
-.content .scontent{width:322px;height:300px;background:#fff;float:left;margin-top:55px;}
+.content .flight_book{width:322px;height:300px;background:#fff;float:left;margin-top:55px;padding:35px;}
 .content .title{padding:80px 0 0 55px;float:left;}
 .content .title h2{font-size:50px;font-weight:bold;}
 .content .title p{font-size:30px;letter-spacing:-4px;}
+
+.flight_book label{font-size:13px;}
+.flight_book select{width:110px;height:30px;border:1px solid #ddd;margin:10px 0 20px;border-radius:5px;}
+.flight_book #nation_sch{width:250px;}
+.flight_book .form_row>.row{float:left;margin-right:27px;}
+.flight_book .form_row>.row2{float:left;margin-right:10px;}
+.flight_book .form_row>.row2 select{width:50px;}
+.flight_book .form_row>.row:last-child{margin-right:0;}
+.flight_book .form_row>.row2:last-child{margin-right:0;}
+
+.content .hotel_book{display:none;}
+
 
 .visual_wrap{width:980px;height:760px;margin:20px auto 0;}
 .visual_wrap .row{width:980px;height:240px;margin-bottom:20px;overflow:hidden;}
