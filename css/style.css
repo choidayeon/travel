@@ -46,7 +46,7 @@ body{font-family: 'Noto Sans', sans-serif;}
 .flight_book .form_row>.row2 select{width:50px;}
 .flight_book .form_row>.row:last-child{margin-right:0;}
 .flight_book .form_row>.row2:last-child{margin-right:0;}
-form button{width:250px;height:35px;background:#ea4f1f;border:none;color:#fff;border-radius:5px;margin-top:12px;}
+form button{width:250px;height:35px;background:#ea4f1f;border:none;color:#fff;border-radius:5px;margin-top:12px;cursor:pointer;}
 
 .content .hotel_book{display:none;}
 
