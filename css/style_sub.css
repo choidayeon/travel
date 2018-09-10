@@ -39,12 +39,12 @@ body{font-family: 'Noto Sans', sans-serif;}
 #footer_wrap li>a{letter-spacing: -0.5px}
 #footer_wrap address{font-size:12px;}
 
-#content_wrap{width:100%;height:1200px;position:relative;}
+#content_wrap{width:100%;height:1200px;position:relative;background:url(../images/patton.png);}
 #content_wrap .content_bg{background:url(../images/coast.jpg) 0 -300px;width:100%;height:280px;background-size:cover;}
 #content_wrap .content_bg h2{width:100%;text-align:center;color:#fff;font-size:60px;padding-top:75px;line-height:40px;}
 #content_wrap .content_bg h2 span{font-size:18px;font-weight:bold;}
 
-#content_wrap .content{width:980px;height:920px;margin:0 auto;background:#fff;margin-top:-70px;border-top:3px solid #083e6a;border-bottom:3px solid #083e6a;}
+#content_wrap .content{width:980px;height:920px;margin:0 auto;background:#fff;margin-top:-70px;border-top:3px solid #083e6a;border-bottom:3px solid #083e6a;box-shadow:2px 2px 3px rgba(81,76,68,0.14);}
 .content_block{width:900px;margin:50px auto 40px;height:560px;}
 .content_txt{float:left;width:480px;height:100%;}
 .content_img{width:390px;float:right;}
@@ -52,8 +52,14 @@ body{font-family: 'Noto Sans', sans-serif;}
 .content .tour{width:900px;height:220px;margin:0 auto;}
 .content .tour li{float:left;}
 .content .tour li+li{margin-left:20px;}
-.content .tour li a{width:210px;height:220px;background:#888;display:block;position:relative;}
-.content .tour li a p{font-size:28px;color:#fff;width:110px;line-height:30px;text-align:right;font-weight:bold;position:absolute;right:15px;bottom:15px;}
+.content .tour li a{width:210px;height:220px;display:block;position:relative;overflow:hidden;}
+.content .tour li:nth-child(1) a{background:url(../images/paris.jpg) no-repeat;background-size:cover;}
+.content .tour li:nth-child(2) a{background:url(../images/baitain.jpg)  no-repeat;background-size:cover;}
+.content .tour li:nth-child(3) a{background:url(../images/swiss.jpg)  no-repeat;background-size:cover;}
+.content .tour li:nth-child(4) a{background:url(../images/belgium.jpg)  no-repeat;background-size:cover;}
+.content .tour li a:hover img{top:10px;transition-duration:0.5s;}
+.content .tour li a p{font-size:28px;color:#fff;width:120px;line-height:30px;text-align:right;font-weight:bold;position:absolute;right:15px;bottom:15px;}
+.content .tour li img{width:40px;position:absolute;top:-40px;left:10px;_display:none;}
 
 .content .content_txt h3{letter-spacing: -1px;color:gray;}
 .content .content_txt h1{letter-spacing: -1px;padding:10px 0 20px;}
@@ -62,3 +68,9 @@ body{font-family: 'Noto Sans', sans-serif;}
 .content .content_txt .inner_txt{width:445px;}
 .content .content_txt .inner_txt h4{color:#ea4e1e;padding-bottom:10px;}
 .content .content_txt .inner_txt p{color:gray;padding-bottom:10px;letter-spacing: -0.5px;font-size:14px;line-height:20px;}
+
+.table_layout{width:445px;border-top:2px solid #083e6a;margin-top:40px;}
+.table_layout li{border-bottom:1px solid #ddd;}
+.table_layout .table_tr>div{float:left;height:30px;font-size:14px;padding:5px 10px;}
+.table_layout .subject{width:35%;background:#fbfcfe;}
+.table_layout .information{width:65%;}
