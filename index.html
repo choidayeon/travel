@@ -21,6 +21,13 @@
 				$(".submenu").hide();
 				$(".subback").hide();
 			});
+
+			var btn = $(".content>.select>a");
+			btn.click(function(){
+				btn.removeClass("active");
+				var k = $(this).index();
+				btn.eq(k).addClass("active");
+			});
 		});
 	</script>
 </head>
@@ -96,7 +103,7 @@
 	<div id="content_wrap">
 		<div class="content clearfix">
 			<div class="select">
-				<a href="#" class="active"><i class="fas fa-plane"></i> 공항예약</a>
+				<a href="#"><i class="fas fa-plane"></i> 공항예약</a>
 				<a href="#"><i class="fas fa-h-square"></i> 호텔예약</a>
 				<a href="#"><i class="fas fa-car"></i> 렌트카</a>
 				<a href="#"><i class="fas fa-suitcase"></i> 휴양지</a>
