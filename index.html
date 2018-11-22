@@ -11,6 +11,18 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/jquery.bxslider.js"></script>
+	<script>
+		$(function(){
+			$(".header_menu>li").mouseenter(function(){
+				var i = $(this).index();
+				$(".submenu").eq(i).show();
+				$(".subback").show();
+			}).mouseleave(function(){
+				$(".submenu").hide();
+				$(".subback").hide();
+			});
+		});
+	</script>
 </head>
 <body>
 	<div id="header_wrap">
@@ -35,13 +47,50 @@
 		</div>
 		<div id="header_menu_wrap">
 			<ul class="header_menu clearfix">
-				<li><a href="">여행도시</a></li>
-				<li><a href="">호텔예약</a></li>
-				<li><a href="">렌트카</a></li>
-				<li><a href="">여행TIP</a></li>
-				<li><a href="sub.html">회사소개</a></li>
-				<li><a href="">커뮤니티</a></li>
+				<li><a href="">여행도시</a>
+					<ul class="clearfix submenu">
+						<li><a href="#">s_menu01-01</a></li>
+						<li><a href="#">s_menu01-02</a></li>
+						<li><a href="#">s_menu01-03</a></li>
+					</ul>
+				</li>
+				<li><a href="">호텔예약</a>
+					<ul class="clearfix submenu">
+						<li><a href="#">s_menu02-01</a></li>
+						<li><a href="#">s_menu02-02</a></li>
+						<li><a href="#">s_menu02-03</a></li>
+					</ul>
+				</li>
+				<li><a href="">렌트카</a>
+					<ul class="clearfix submenu">
+						<li><a href="#">s_menu03-01</a></li>
+						<li><a href="#">s_menu03-02</a></li>
+						<li><a href="#">s_menu03-03</a></li>
+					</ul>
+				</li>
+				<li><a href="">여행TIP</a>
+					<ul class="clearfix submenu">
+						<li><a href="#">s_menu04-01</a></li>
+						<li><a href="#">s_menu04-02</a></li>
+						<li><a href="#">s_menu04-03</a></li>
+					</ul>
+				</li>
+				<li><a href="sub.html">회사소개</a>
+					<ul class="clearfix submenu">
+						<li><a href="#">s_menu05-01</a></li>
+						<li><a href="#">s_menu05-02</a></li>
+						<li><a href="#">s_menu05-03</a></li>
+					</ul>
+				</li>
+				<li><a href="">커뮤니티</a>
+					<ul class="clearfix submenu">
+						<li><a href="#">s_menu06-01</a></li>
+						<li><a href="#">s_menu06-02</a></li>
+						<li><a href="#">s_menu06-03</a></li>
+					</ul>
+				</li>
 			</ul>
+			<div class="subback"></div>
 		</div>
 	</div>
 	<div id="content_wrap">
